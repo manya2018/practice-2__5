@@ -2,9 +2,10 @@
 #include <vector>
 using namespace std;
 // TASK *1*
-int binary_search( int sorted[],int x )
+template <size_t N>
+int binary_search(int (&sorted)[N] ,int x )
 {
-    int h = 7;
+    size_t h = N-1;
     int l = 0;
     int m;
     while (l <= h)
